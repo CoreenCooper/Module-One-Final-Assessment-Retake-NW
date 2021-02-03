@@ -14,8 +14,12 @@
 * returns: {}
 */
 
-function countWords() {
-  
+
+//*** revisit ***/
+const countWords= arr => {
+    let obj = {};
+    arr.forEach (el => obj[el] ? obj[el] ++ : obj[el] = 1)
+    return obj
 }
 
 module.exports = countWords
